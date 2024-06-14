@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ workout_type }}</title>
+</head>
+<body>
+    <h1>{{ workout_type }}</h1>
+    <ul>
+        {% for muscle_group, exercise in workout %}
+            <li>{{ muscle_group }}: {{ exercise }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Generate Another Workout</a>
+</body>
+</html>
